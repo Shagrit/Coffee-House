@@ -8,7 +8,7 @@ html {
   border-bottom: 2px solid #403F3D;
 }
 .hero-button:hover {
-  background-image: url('/shagrit-JSFE2023Q4/coffee-house/assets/icon/coffee-cup.svg');
+  background-image: url('../coffee-house/assets/icon/coffee-cup.svg');
   background-repeat: no-repeat;
   background-position: center right 50px;
 }

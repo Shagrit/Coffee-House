@@ -1,6 +1,6 @@
-@import url('/shagrit-JSFE2023Q4/coffee-house/style/menu.css');
-@import url('/shagrit-JSFE2023Q4/coffee-house/style/animation.css');
-@import url('/shagrit-JSFE2023Q4/coffee-house/style/media.css');
+@import url('./coffee-house/style/menu.css');
+@import url('./coffee-house/style/animation.css');
+@import url('./coffee-house/style/media.css');
 
 /*!Fonts================================================================ */
 /* inter-regular - latin */
@@ -321,7 +321,7 @@ h2 {
   color: var(--text-color-dark);
 }
 .apps-img {
-  background-image: url('/shagrit-JSFE2023Q4/coffee-house/assets/img/mobile-screens.png');
+  background-image: url('../coffee-house/assets/img/mobile-screens.png');
   width: 630px;
   height: 630px;
 }
