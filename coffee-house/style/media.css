@@ -1,0 +1,186 @@
+@media (min-width: 1440px) {
+  .header-menu-burger {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .header-menu-burger {
+    display: none;
+  }
+}
+
+/**Tablet 768px================================================================ */
+/**Page Home================================================================ */
+@media (max-width: 768px) {
+  .header-list {
+    display: none;
+  }
+  .header-menu {
+    display: none;
+  }
+  .container {
+    width: 768px;
+  }
+  .hero-video-container {
+    width: 688px;
+    height: 644px;
+  }
+  .about-photos {
+    flex-direction: column;
+  }
+  .about-heading {
+    width: 688px;
+  }
+  .about-photo-small {
+    display: none;
+  }
+  .about-photo {
+    margin-bottom: 40px;
+    width: 688px;
+  }
+  .hero-box {
+    margin-left: 60px;
+  }
+  .apps-container {
+    flex-direction: column;
+  }
+  .apps-info {
+    width: 100%;
+  }
+  .apps-img {
+    margin-top: 100px;
+  }
+  .footer-container {
+    width: 688px;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .footer-contacts-heading {
+    margin-top: 65px;
+  }
+  .footer-contacts {
+    margin-left: 0;
+  }
+  .apps-img {
+    margin-right: 29px;
+    margin-left: 29px;
+  }
+  .apps-info-heading {
+    margin-top: 20px;
+  }
+  .about-img {
+    right: 20px;
+  }
+  .hero-button {
+    background-image: url('/shagrit-JSFE2023Q4/coffee-house/assets/icon/coffee-cup.svg');
+    background-repeat: no-repeat;
+    background-position: center right 50px;
+  }
+}
+/**Page Menu================================================================ */
+@media (max-width: 768px) {
+  .menu-heading {
+    width: 688px;
+  }
+  .menu-coffee-box {
+    height: 1052px;
+    overflow: hidden;
+  }
+  .menu-coffee-box-btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .menu-coffee-box {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1440px) {
+  .menu-coffee-box-btn {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .menu-coffee-box-btn {
+    display: none;
+  }
+}
+
+/**Mobile 380px================================================================ */
+/**Page Home================================================================ */
+@media (max-width: 380px) {
+  .container {
+    width: 380px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
+  }
+  .hero-video-container {
+    width: 348px;
+  }
+  .hero-heading {
+    font-size: 42px;
+    line-height: 115%;
+  }
+  .hero-box {
+    width: 316px;
+    margin-left: 16px;
+  }
+  .choose-arrow-icon {
+    display: none;
+  }
+  .about-heading {
+    width: 348px;
+    font-size: 32px;
+  }
+  .about-photo {
+    width: 348px;
+    height: 590px;
+  }
+  .apps-img {
+    width: 348px;
+    height: 348px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+  .footer-social-heading {
+    font-size: 32px;
+    width: 320px;
+  }
+  .footer-social {
+    width: 316px;
+  }
+  .choose-slide {
+    width: 348px;
+  }
+  .apps-info-heading {
+    font-size: 32px;
+  }
+  .apps-info {
+    width: 348px;
+  }
+  .choose-heading {
+    font-size: 32px;
+    width: 348px;
+  }
+  .about-photos-left {
+    width: 348px;
+  }
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .about-img {
+    right: 200px;
+  }
+  .footer-container {
+    width: 348px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .apps-info-button {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}

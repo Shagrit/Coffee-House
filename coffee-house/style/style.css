@@ -1,0 +1,394 @@
+@import url('/shagrit-JSFE2023Q4/coffee-house/style/menu.css');
+@import url('/shagrit-JSFE2023Q4/coffee-house/style/animation.css');
+@import url('/shagrit-JSFE2023Q4/coffee-house/style/media.css');
+
+/*!Fonts================================================================ */
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*!Main styles================================================================ */
+
+html, body {
+  font-family: Inter, sans-serif;
+  background-color: var(--bg-color-body);
+}
+h2 {
+  color: var(--text-color-dark);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 75px */
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.list {
+  display: flex;
+}
+.heading-accent {
+  color: var(--text-color-accent);
+  font-style: italic;
+}
+:root {
+  --bg-color-body: #E1D4C9;
+}
+:root {
+  --bg-color-container: #665F55;
+}
+:root {
+  --bg-color-backdrop: #403F3DCC;
+}
+:root {
+  --text-color-dark : #403F3D;
+}
+:root {
+  --text-color-light : #E1D4C9;
+}
+:root {
+  --text-color-accent : #B0907A;
+}
+:root {
+  --border-color-light : #C1B6AD;
+}
+:root {
+  --border-color-dark : #665F55;
+}
+
+/**Header================================================================ */
+.header {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  cursor: pointer;
+}
+.header-list {
+  gap: 40px;
+}
+.header-link {
+  color: var(--text-color-dark);
+}
+.header-menu {
+  cursor: pointer;
+  display: flex;
+}
+.header-menu-link {
+  color: var(--text-color-dark);
+  margin-right: 8px;
+}
+
+/**Section Hero================================================================ */
+.hero-container {
+  position: relative;
+}
+.hero-video-container {
+  position: absolute;
+  width: 1360px;
+  height: 644px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.hero-video {
+  object-fit: cover;
+  width: 100%;
+  height: 644px;
+  border-radius: 40px;
+}
+.hero-box {
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+  width: 530px;
+}
+.hero-heading {
+  color: var(--text-color-light);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%; /* 75.6px */
+}
+.hero-discription {
+  margin: 40px 0px;
+  color: var(--text-color-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.hero-button {
+  display: inline-block;
+  padding: 20px 78px;
+  border-radius: 100px;
+  background-color: var(--bg-color-body);
+  color: var(--text-color-dark);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+/**Section Choose================================================================ */
+.choose {
+  margin-top: 100px;
+}
+.choose-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.choose-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.choose-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose-arrow {
+  transform: translateY(-20px);
+}
+.choose-arrow-icon {
+  stroke: #665F55;
+}
+.choose-slide-img {
+  width: 480px;
+  height: 480px;
+}
+.choose-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  color: var(--text-color-dark);
+}
+.choose-slide-heading {
+  margin-top: 20px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+.choose-slide-discription {
+  margin: 16px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400; 
+  text-align: center;
+  line-height: 150%; /* 24px */
+}
+.choose-slide-price {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+.choose-slide-lines {
+  display: flex;
+  gap: 12px;
+}
+.choose-slide-line {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: var(--border-color-light );
+}
+.slide-line-active {
+  background-color: var(--border-color-dark);
+}
+
+/**Section About================================================================ */
+.about-heading {
+  width: 1370px;
+}
+.about-photos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 1060px;
+}
+.about-photos-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-photo {
+  overflow: hidden;
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+}
+.about-img {
+  position: relative;
+  bottom: 65px;
+  right: 33px;
+}
+.about-photo-small {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 660px;
+  height: 430px;
+}
+.about-img-small {
+  position: relative;
+  bottom: 150px;
+  right: 33px;
+}
+.about-photos-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/**Section Apps================================================================ */
+.apps-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.apps-info {
+  margin-top: 144px;
+  width: 630px;
+}
+.apps-info-discription {
+  color: var(--text-color-dark);
+  margin: 40px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.apps-info-button {
+  width: 200px;
+  height: 64px;
+  display: inline-flex;
+  border: 1px solid var(--border-color-dark);
+  border-radius: 100px;
+  padding: 12px 20px 12px 20px;
+}
+.apps-info-button:first-child {
+  margin-right: 15px;
+}
+.apps-info-button-icon {
+  margin-right: 8px;
+  fill: #403F3D;
+}
+.apps-info-button-discription {
+  display: flex;
+  flex-direction: column;
+}
+.apps-info-button-text {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 14px */
+  color: var(--text-color-dark);
+}
+.apps-info-button-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  color: var(--text-color-dark);
+}
+.apps-img {
+  background-image: url('/shagrit-JSFE2023Q4/coffee-house/assets/img/mobile-screens.png');
+  width: 630px;
+  height: 630px;
+}
+
+/**Footer================================================================ */
+.footer-container {
+  display: flex;
+  width: 1360px;
+  background-color: var(--bg-color-container);
+  border-radius: 40px;
+  padding: 100px 100px;
+}
+.footer-social {
+  width: 530px;
+}
+.footer-social-heading {
+  margin-bottom: 40px;
+  color: var(--text-color-light);
+}
+.footer-social-btn {
+  display: inline-block;
+  padding: 18px 18px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 100px;
+}
+.footer-social-btn:nth-child(odd) {
+  margin: 0px 12px 0px 12px;
+}
+.footer-contacts {
+  margin-top: 32px;
+  margin-left: 100px;
+}
+.footer-contacts-heading {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+  color: var(--text-color-light);
+}
+.footer-contact-icon {
+  margin-right: 8px;
+}
+.footer-contact-link {
+  color: var(--text-color-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.footer-contact-time {
+  color: var(--text-color-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.footer-contact-line:nth-child(even) {
+  margin: 20px 0px 20px 0px;
+}
+.footer-contacts-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer-social-icon {
+  stroke: #E1D4C9;
+}
