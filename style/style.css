@@ -321,7 +321,7 @@ h2 {
   color: var(--text-color-dark);
 }
 .apps-img {
-  background-image: url('./assets/img/mobile-screens.png');
+  background-image: url('../assets/img/mobile-screens.png');
   width: 630px;
   height: 630px;
 }
